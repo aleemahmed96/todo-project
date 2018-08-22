@@ -24,6 +24,7 @@ class Todo_task(Resource):
 
         if todo not in Todo:
             abort(404, message="no task is here!")
+            
         else:
             abort(404,message="task is already added!")
 
