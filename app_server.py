@@ -9,6 +9,7 @@ Todo = {
     'todo2':'assignments'
 }
 
+
 class Todo_review(Resource):
 	""" to see the contents of task in index page """
 
@@ -20,7 +21,12 @@ class Todo_task(Resource):
 
 
     def get(self,todo):
+
+        if todo not in Todo:
+            abort(404, message="no task is here!")
+
         return Todo[todo]
+
 
     def put(self,todo):
 
