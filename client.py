@@ -2,7 +2,7 @@ from requests import get,put
 
 ## in order to add new task
 
-put('http://localhost:8000/todo4',data={'data': 'Remember the milk'}).json()
+put('http://localhost:8000/todo4',data={'data': 'make coffee'}).json()
 
 # in order to get requests
 
