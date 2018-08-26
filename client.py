@@ -26,6 +26,9 @@ print(todo3)
 # changes are there regarding app_server files
 # be sure to check them out.
 
+todo4 = get("http://localhost:8000/todo4").json()
+print(todo4)
+
 # app_server1.py will overwrite easily
 # app_server2.py will not overwrite easily
 
