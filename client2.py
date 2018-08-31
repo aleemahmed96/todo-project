@@ -10,7 +10,7 @@ def todo_prompt():
     """ making an automated command """
 
     for i in Todo:
-        msg = print(i) 
+        # msg = print(i) 
         var = "http://localhost:8000/{}".format(i)
         fetch = get(var).json()
         print(fetch)
