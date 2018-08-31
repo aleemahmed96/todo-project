@@ -26,7 +26,7 @@ class Todo_task(Resource):
         if todo not in Todo:
             abort(404, message="no task is here!")
 
-        return Todo[todo]
+        return {todo : Todo[todo]}
 
 
     def put(self,todo):
